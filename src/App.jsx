@@ -84,12 +84,14 @@ const App = () => {
           <button 
             className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
             onClick={() => setFilter('all')}
+            aria-pressed={filter === 'all'}
           >
             All Products
           </button>
           <button 
             className={`filter-btn ${filter === 'available' ? 'active' : ''}`}
             onClick={() => setFilter('available')}
+            aria-pressed={filter === 'available'}
           >
             Available Now
           </button>
