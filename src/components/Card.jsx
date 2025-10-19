@@ -19,7 +19,7 @@ const Card = ({ product }) => {
           <div className="card-rating">
             {rating > 0 ? (
               <>
-                <span className="star">⭐</span>
+                <span className="star" role="img" aria-label="Rating">⭐</span>
                 <span className="rating-value">{rating}</span>
                 <span className="rating-votes">({votes} votes)</span>
               </>
